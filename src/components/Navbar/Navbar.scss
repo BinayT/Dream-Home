@@ -1,3 +1,10 @@
+//Menu and Button on nav should disappear under 768px of screen
+@mixin hideMenu {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 nav {
   height: 60px;
   background-color: #000;
@@ -23,13 +30,22 @@ nav {
   font-style: italic;
 }
 
-.nav-menu {
+.nav__bars {
+  display: none;
+}
+
+.nav__menu {
   display: flex;
   align-items: center;
+  margin-right: -48px;
+
+  @include hideMenu();
 }
 
 .nav__button {
   display: flex;
   align-items: center;
   margin-right: 24px;
+
+  @include hideMenu();
 }

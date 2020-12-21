@@ -12,7 +12,7 @@ function Navbar() {
       <Link className='logo' to='/'>
         LOGO
       </Link>
-      <i />
+      <i className='nav__bars'></i>
       <div className='nav__menu'>
         {menuData.map(({ link, title }, i) => (
           <MenuLinks key={i} link={link} title={title} />
