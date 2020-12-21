@@ -1,3 +1,5 @@
+@import '../Navbar';
+
 .menulink {
-  color: #fff;
+  @include navlinks();
 }

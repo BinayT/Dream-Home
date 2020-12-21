@@ -1,0 +1,46 @@
+@mixin Button(
+  $background: #cd853f,
+  $padding: 14px 24px,
+  $color: #0001da,
+  $fontsize: 14px
+) {
+  @if $background == 'primary' {
+    background: #000d1a;
+  } @else {
+    background: $background;
+  }
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  min-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @if $padding == 'big' {
+    padding: '16px 40px';
+  } @else {
+    padding: $padding;
+  }
+  @if $color == 'primary' {
+    color: #fff;
+  } @else {
+    color: $color;
+  }
+  @if $fontsize == 'big' {
+    font-size: '20px';
+  } @else {
+    font-size: $fontsize;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.button {
+  @include Button('primary');
+}

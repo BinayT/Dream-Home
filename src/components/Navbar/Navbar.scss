@@ -1,8 +1,35 @@
 nav {
   height: 60px;
   background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+}
+
+@mixin navlinks {
+  color: #fff;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .logo {
-  color: #fff;
+  @include navlinks();
+  font-style: italic;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav__button {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
 }
