@@ -25,31 +25,31 @@ nav {
   text-decoration: none;
 }
 
-.logo {
+.nav__logo {
   @include navlinks();
   font-style: italic;
 }
 
-.nav__bars {
-  display: none;
-  @media screen and (max-width: 768px) {
-    color: white;
-    display: block;
-    background-size: contain;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-80%, 25%);
-    height: 40px;
-    width: 40px;
+.nav__burgerMenu {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
+  color: white;
+  display: block;
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-80%, 20%);
+  height: 40px;
+  width: 40px;
 }
 
 .nav__menu {
   display: flex;
   align-items: center;
-  margin-right: -48px;
+  margin-right: -60px;
 
   @include hideMenu();
 }

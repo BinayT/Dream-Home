@@ -10,10 +10,10 @@ import './Navbar.scss';
 function Navbar() {
   return (
     <nav>
-      <Link className='logo' to='/'>
+      <Link className='nav__logo' to='/'>
         LOGO
       </Link>
-      <RiMenu4Line className='nav__bars' />
+      <RiMenu4Line className='nav__burgerMenu' />
       <div className='nav__menu'>
         {menuData.map(({ link, title }, i) => (
           <MenuLinks key={i} link={link} title={title} />
