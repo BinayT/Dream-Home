@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { RiMenu4Line } from 'react-icons/ri';
 
 import { menuData } from '../../data/MenuData';
 import Button from './Button/Button';
@@ -12,7 +13,7 @@ function Navbar() {
       <Link className='logo' to='/'>
         LOGO
       </Link>
-      <i className='nav__bars'></i>
+      <RiMenu4Line className='nav__bars' />
       <div className='nav__menu'>
         {menuData.map(({ link, title }, i) => (
           <MenuLinks key={i} link={link} title={title} />
