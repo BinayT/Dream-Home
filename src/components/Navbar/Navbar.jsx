@@ -7,13 +7,13 @@ import Button from './Button/Button';
 import MenuLinks from './MenuLinks/MenuLinks';
 import './Navbar.scss';
 
-function Navbar() {
+function Navbar({ toggle }) {
   return (
     <nav>
       <Link className='nav__logo' to='/'>
         LOGO
       </Link>
-      <RiMenu4Line className='nav__burgerMenu' />
+      <RiMenu4Line className='nav__burgerMenu' onClick={toggle} />
       <div className='nav__menu'>
         {menuData.map(({ link, title }, i) => (
           <MenuLinks key={i} link={link} title={title} />

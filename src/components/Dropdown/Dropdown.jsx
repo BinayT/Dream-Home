@@ -5,10 +5,17 @@ import { AiOutlineClose } from 'react-icons/ai';
 import './Dropdown.scss';
 import { menuData } from '../../data/MenuData';
 
-function Dropdown() {
+function Dropdown({ toggle, isOpen }) {
+  console.log(isOpen);
+  console.log(toggle);
   return (
-    <div className='dropdown'>
-      <div className='dropdown__icon'>
+    <div
+      className='dropdown'
+      style={{ opacity: isOpen ? '1' : '0', top: isOpen ? '0' : '-100%' }}
+      isOpen={isOpen}
+      onClick={toggle}
+    >
+      <div className='dropdown__icon' onClick={toggle}>
         <AiOutlineClose className='dropdown__iconClose' />
       </div>
       <div>
