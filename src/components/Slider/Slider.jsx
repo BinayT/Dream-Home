@@ -14,15 +14,20 @@ function Slider({ slides }) {
     console.log(current);
   };
 
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+    console.log(current);
+  };
+
   return (
     <section className='slider'>
       <div className='slider__wrapper'>
-        {slides.map((el) => (
-          <Slide key={el.title} items={el} />
+        {slides.map((el, i) => (
+          <Slide key={i} index={i} items={el} current={current} />
         ))}
       </div>
       <div className='slider__buttons'>
-        <FaArrowLeft className='arrow__buttons' />
+        <FaArrowLeft className='arrow__buttons' onClick={prevSlide} />
         <FaArrowRight className='arrow__buttons' onClick={nextSlide} />
       </div>
     </section>
