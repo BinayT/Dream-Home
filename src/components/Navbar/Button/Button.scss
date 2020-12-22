@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   @if $padding == 'big' {
-    padding: '16px 40px';
+    padding: 16px 40px;
   } @else {
     padding: $padding;
   }

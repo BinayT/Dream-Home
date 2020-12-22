@@ -1,0 +1,66 @@
+@import '../Navbar/Button/Button.scss';
+
+.dropdown {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #cd853f;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.dropdown__icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+}
+
+.dropdown__iconClose {
+  color: #000d1a;
+}
+
+.dropdown__menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 80px);
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: 480px) {
+    grid-template-rows: repeat(4, 60px);
+  }
+}
+
+.dropdown__link {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: #000d1a;
+  }
+}
+
+.dropdown__button {
+  display: flex;
+  justify-content: center;
+
+  a {
+    @include Button('primary', 'big', 'primary');
+  }
+}
