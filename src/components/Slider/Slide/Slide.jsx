@@ -18,7 +18,7 @@ function Slide({ items }) {
             style={{ maxWidth: '160px' }}
           >
             {items.label}
-            <BiRightArrow />
+            <BiRightArrow style={{ marginLeft: '0.5rem' }} />
           </Link>
         </div>
       </div>
