@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 import Slide from './Slide/Slide';
@@ -9,15 +9,29 @@ function Slider({ slides }) {
   const length = slides.length;
   const timeout = useRef(null);
 
+  useEffect(() => {
+    const nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+    timeout.current = setTimeout(nextSlide, 4000);
+    return function () {
+      timeout.current && clearTimeout(timeout.current);
+    };
+  }, [current, length]);
+
   const nextSlide = () => {
+    timeout.current && clearTimeout(timeout.current);
     setCurrent(current === length - 1 ? 0 : current + 1);
     console.log(current);
   };
 
   const prevSlide = () => {
+    timeout.current && clearTimeout(timeout.current);
     setCurrent(current === 0 ? length - 1 : current - 1);
     console.log(current);
   };
+
+  if (!Array.isArray(slides) || slides.length <= 0) return null;
 
   return (
     <section className='slider'>

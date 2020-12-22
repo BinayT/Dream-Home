@@ -3,6 +3,7 @@ import ImageTwo from '../images/ImageTwo.jpg';
 import ImageThree from '../images/ImageThree.jpg';
 import ImageFour from '../images/ImageFour.jpg';
 import ImageFive from '../images/ImageFive.jpg';
+import ImageSix from '../images/ImageSix.jpg';
 
 export const sliderData = [
   {
@@ -43,6 +44,14 @@ export const sliderData = [
     path: '/homes',
     label: 'View Home',
     image: ImageFive,
+    alt: 'House',
+  },
+  {
+    title: 'Rural Home - Nepal',
+    price: '170.000€',
+    path: '/homes',
+    label: 'View Home',
+    image: ImageSix,
     alt: 'House',
   },
 ];

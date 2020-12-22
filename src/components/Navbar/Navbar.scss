@@ -7,7 +7,6 @@
 
 nav {
   height: 60px;
-  background-color: red;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -58,6 +57,9 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 24px;
-
   @include hideMenu();
+
+  a {
+    color: #fff;
+  }
 }
