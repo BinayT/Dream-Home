@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/homesweethome/static/css/main.c991c628.chunk.css",
+    "main.js": "/homesweethome/static/js/main.1d98be91.chunk.js",
+    "main.js.map": "/homesweethome/static/js/main.1d98be91.chunk.js.map",
+    "runtime-main.js": "/homesweethome/static/js/runtime-main.058f1801.js",
+    "runtime-main.js.map": "/homesweethome/static/js/runtime-main.058f1801.js.map",
+    "static/js/2.fbe20ec2.chunk.js": "/homesweethome/static/js/2.fbe20ec2.chunk.js",
+    "static/js/2.fbe20ec2.chunk.js.map": "/homesweethome/static/js/2.fbe20ec2.chunk.js.map",
+    "static/js/3.2a62c451.chunk.js": "/homesweethome/static/js/3.2a62c451.chunk.js",
+    "static/js/3.2a62c451.chunk.js.map": "/homesweethome/static/js/3.2a62c451.chunk.js.map",
+    "index.html": "/homesweethome/index.html",
+    "static/css/main.c991c628.chunk.css.map": "/homesweethome/static/css/main.c991c628.chunk.css.map",
+    "static/js/2.fbe20ec2.chunk.js.LICENSE.txt": "/homesweethome/static/js/2.fbe20ec2.chunk.js.LICENSE.txt",
+    "static/media/ImageFive.361a6407.jpg": "/homesweethome/static/media/ImageFive.361a6407.jpg",
+    "static/media/ImageFour.f3d40252.jpg": "/homesweethome/static/media/ImageFour.f3d40252.jpg",
+    "static/media/ImageOne.5a3889dc.jpg": "/homesweethome/static/media/ImageOne.5a3889dc.jpg",
+    "static/media/ImageSix.832b4040.jpg": "/homesweethome/static/media/ImageSix.832b4040.jpg",
+    "static/media/ImageThree.b349bb3c.jpg": "/homesweethome/static/media/ImageThree.b349bb3c.jpg",
+    "static/media/ImageTwo.b2ccf256.jpg": "/homesweethome/static/media/ImageTwo.b2ccf256.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.058f1801.js",
+    "static/js/2.fbe20ec2.chunk.js",
+    "static/css/main.c991c628.chunk.css",
+    "static/js/main.1d98be91.chunk.js"
+  ]
+}
