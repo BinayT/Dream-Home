@@ -27,6 +27,7 @@ nav {
 .nav__logo {
   @include navlinks();
   font-style: italic;
+  text-shadow: 2px 2px 1px rgb(9, 2, 2);
 }
 
 .nav__burgerMenu {

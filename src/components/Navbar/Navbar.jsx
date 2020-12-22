@@ -11,7 +11,7 @@ function Navbar({ toggle }) {
   return (
     <nav>
       <Link className='nav__logo' to='/'>
-        LOGO
+        <h2>NLH</h2>
       </Link>
       <RiMenu4Line className='nav__burgerMenu' onClick={toggle} />
       <div className='nav__menu'>
