@@ -1,8 +1,8 @@
-import ImageOne from 'images/ImageOne';
-import ImageTwo from 'images/ImageTwo';
-import ImageThree from 'images/ImageThree';
-import ImageFour from 'images/ImageFour';
-import ImageFive from 'images/ImageFive';
+import ImageOne from '../images/ImageOne.jpg';
+import ImageTwo from '../images/ImageTwo.jpg';
+import ImageThree from '../images/ImageThree.jpg';
+import ImageFour from '../images/ImageFour.jpg';
+import ImageFive from '../images/ImageFive.jpg';
 
 export const sliderData = [
   {

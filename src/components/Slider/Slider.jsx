@@ -1,15 +1,20 @@
 import React from 'react';
-import { sliderData } from '../../data/SliderData';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
+import Slide from './Slide/Slide';
 import './Slider.scss';
 
-function Slider() {
+function Slider({ slides }) {
   return (
     <section className='slider'>
       <div className='slider__wrapper'>
-        {sliderData.map((el) => (
+        {slides.map((el) => (
           <Slide key={el.title} items={el} />
         ))}
+      </div>
+      <div className='slider__buttons'>
+        <FaArrowLeft className='arrow__buttons' />
+        <FaArrowRight className='arrow__buttons' />
       </div>
     </section>
   );
